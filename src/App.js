@@ -10,18 +10,22 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import Teams from './components/Teams/Teams';
+import TeamDetails from './components/TeamDetails/TeamDetails';
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route path="/home">
-          <Home></Home>
+          <Home />
         </Route>
         <Route path="/teams">
           <Teams />
         </Route>
-        <Route path="/">
+        <Route path="/team/:idTeam">
+          <TeamDetails />
+        </Route>
+        <Route exact path="/">
           <Home />
         </Route>
       </Switch>
