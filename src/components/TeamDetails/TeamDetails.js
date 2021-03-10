@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react'
 import { useParams } from 'react-router';
+import Banner from '../Banner/Banner';
 import TeamAbout from '../TeamAbout/TeamAbout';
 
 const TeamDetails = (props) => {
@@ -17,10 +19,10 @@ const TeamDetails = (props) => {
 
     return (
         <div>
-            <h4>this is friend Details:{idTeam}</h4>
-            {
+            <Banner></Banner>
+                {
                 team.map(about => <TeamAbout about={about}></TeamAbout>)
-            }
+                }
         </div >
     );
 };

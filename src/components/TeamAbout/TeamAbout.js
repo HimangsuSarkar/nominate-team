@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarCheck, faFlag, faFootballBall, faFutbol, faMars } from '@fortawesome/free-solid-svg-icons'
+import Banner from '../Banner/Banner';
+import { useParams } from 'react-router';
 
 const TeamAbout = (props) => {
-    console.log(props.about);
+    // console.log(props.about);
+    const { idTeam } = useParams();
+
     const { strTeam, intFormedYear, strSport, strCountry, strGender, strDescriptionEN, strTeamBanner, strTeamFanart1, strTeamFanart2, strTeamFanart3, strTeamFanart4, strFacebook, strTwitter, strYoutube } = props.about;
     return (
         <div>
@@ -16,7 +20,8 @@ const TeamAbout = (props) => {
             <div>
                 <p>{strDescriptionEN}</p>
             </div>
-        </div>
+
+        </div >
 
     );
 };
