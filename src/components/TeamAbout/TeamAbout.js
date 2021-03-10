@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarCheck, faFlag, faFootballBall, faFutbol, faMars } from '@fortawesome/free-solid-svg-icons'
 
 const TeamAbout = (props) => {
     console.log(props.about);
@@ -6,11 +8,11 @@ const TeamAbout = (props) => {
     return (
         <div>
             <h1>{strTeam}</h1>
-            <p>Founded:{intFormedYear}</p>
-            <p>Country:{strCountry}</p>
-            <p>Sport Type:{strSport}</p>
-            <p>Gender:{strGender}</p>
-            <img src={strTeamFanart4} alt="" />
+            <p>< FontAwesomeIcon icon={faCalendarCheck} />Founded:{intFormedYear}</p>
+            <p>< FontAwesomeIcon icon={faFlag} />Country:{strCountry}</p>
+            <p>< FontAwesomeIcon icon={faFutbol} />Sport Type:{strSport}</p>
+            < p > < FontAwesomeIcon icon={faMars} />Gender: {strGender}</p>
+            < img src={strTeamFanart4} alt="" />
             <div>
                 <p>{strDescriptionEN}</p>
             </div>
