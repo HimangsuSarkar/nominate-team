@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarCheck, faFlag, faFutbol, faMars } from '@fortawesome/free-solid-svg-icons'
 import { useParams } from 'react-router';
@@ -14,7 +14,7 @@ const TeamAbout = (props) => {
     const { strTeam, intFormedYear, strSport, strCountry, strGender, strDescriptionEN, strTeamBanner, strTeamJersey, strTeamLogo, strFacebook, strTwitter, strYoutube } = props.about;
     return (
         < div >
-            <Image src={strTeamBanner}></Image>
+            <Image src={strTeamBanner} fluid></Image>
             <Row>
                 <Col xs={12} md={6}>
                     <h1>{strTeam}</h1>

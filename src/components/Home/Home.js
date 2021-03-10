@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Banner from '../Banner/Banner';
-import TeamAbout from '../TeamAbout/TeamAbout';
 import Teams from '../Teams/Teams';
 
 const Home = () => {
