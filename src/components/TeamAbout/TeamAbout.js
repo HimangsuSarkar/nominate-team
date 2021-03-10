@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarCheck, faFlag, faFutbol, faMars } from '@fortawesome/free-solid-svg-icons'
 import { useParams } from 'react-router';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Image, Row } from 'react-bootstrap';
 import facebook from '../../icon/Facebook.png'
 import twitter from '../../icon/Twitter.png'
 import youtube from '../../icon/YouTube.png'
@@ -14,6 +14,7 @@ const TeamAbout = (props) => {
     const { strTeam, intFormedYear, strSport, strCountry, strGender, strDescriptionEN, strTeamBanner, strTeamJersey, strTeamLogo, strFacebook, strTwitter, strYoutube } = props.about;
     return (
         < div >
+            <Image src={strTeamBanner}></Image>
             <Row>
                 <Col xs={12} md={6}>
                     <h1>{strTeam}</h1>

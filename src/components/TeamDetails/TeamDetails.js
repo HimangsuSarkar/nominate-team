@@ -20,7 +20,7 @@ const TeamDetails = (props) => {
 
     return (
         <div>
-            <Banner></Banner>
+            {/* <Banner></Banner> */}
             <Container>
                 {
                     team.map(about => <TeamAbout about={about}></TeamAbout>)
