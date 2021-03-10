@@ -2,6 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react'
+import { Container } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import Banner from '../Banner/Banner';
 import TeamAbout from '../TeamAbout/TeamAbout';
@@ -20,9 +21,11 @@ const TeamDetails = (props) => {
     return (
         <div>
             <Banner></Banner>
+            <Container>
                 {
-                team.map(about => <TeamAbout about={about}></TeamAbout>)
+                    team.map(about => <TeamAbout about={about}></TeamAbout>)
                 }
+            </Container>
         </div >
     );
 };
