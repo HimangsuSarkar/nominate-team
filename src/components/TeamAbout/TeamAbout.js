@@ -1,21 +1,18 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarCheck, faFlag, faFutbol, faMars } from '@fortawesome/free-solid-svg-icons'
-import { useParams } from 'react-router';
+import { faCalendarCheck, faFlag, faFutbol, faMars } from '@fortawesome/free-solid-svg-icons';
 import { Col, Image, Jumbotron, Row } from 'react-bootstrap';
 import male from '../../image/male.png';
 import female from '../../image/female.png';
 import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import './TeamAbout.css';
 
+
 const TeamAbout = (props) => {
-    // console.log(props.about);
-    const { idTeam } = useParams();
 
     const { strTeam, intFormedYear, strSport, strCountry, strGender, strDescriptionEN, strTeamBanner, strFacebook, strTwitter, strYoutube } = props.about;
     return (
         < div >
-
             <Jumbotron className='banner'>
                 < Image src={strTeamBanner} fluid className=''></Image>
             </Jumbotron >
@@ -30,12 +27,13 @@ const TeamAbout = (props) => {
                 </Col>
                 <Col xs={12} md={6}>
                     <Image src={strGender === "Male" ? male : female} thumbnail alt="" />
-
                 </Col>
             </Row>
+
             <Row className='mt-4 p-3'>
                 <p>{strDescriptionEN}</p>
             </Row>
+
             <Row className='d-flex justify-content-center p-3'>
                 <a href={`https://${strTwitter}`} target="_blank" className='px-3'>
                     < FontAwesomeIcon icon={faTwitter} size='3x' />
@@ -46,12 +44,8 @@ const TeamAbout = (props) => {
                 <a href={`https://${strYoutube}`} target="_blank" className='px-3'>
                     < FontAwesomeIcon icon={faYoutube} size='3x' />
                 </a>
-
             </Row>
-
         </div >
-
-
     );
 };
 

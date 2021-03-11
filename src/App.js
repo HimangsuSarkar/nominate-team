@@ -6,8 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import Teams from './components/Teams/Teams';
