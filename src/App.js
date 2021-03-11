@@ -29,7 +29,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="*">
+        <Route path="*">
           <NoMatch />
         </Route>
       </Switch>
