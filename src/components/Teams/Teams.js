@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, } from '@fortawesome/free-solid-svg-icons';
-import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 const Teams = (props) => {
     const { strTeam, strSport, strTeamBadge, idTeam } = props.team;

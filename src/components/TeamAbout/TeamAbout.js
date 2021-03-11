@@ -35,13 +35,13 @@ const TeamAbout = (props) => {
             </Row>
 
             <Row className='d-flex justify-content-center p-3'>
-                <a href={`https://${strTwitter}`} target="_blank" className='px-3'>
+                <a href={`https://${strTwitter}`} className='px-3'>
                     < FontAwesomeIcon icon={faTwitter} size='3x' />
                 </a>
-                <a href={`https://${strFacebook}`} target="_blank" className='px-3'>
+                <a href={`https://${strFacebook}`} className='px-3'>
                     < FontAwesomeIcon icon={faFacebook} size='3x' />
                 </a>
-                <a href={`https://${strYoutube}`} target="_blank" className='px-3'>
+                <a href={`https://${strYoutube}`} className='px-3'>
                     < FontAwesomeIcon icon={faYoutube} size='3x' />
                 </a>
             </Row>
