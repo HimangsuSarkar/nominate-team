@@ -21,7 +21,7 @@ const Home = () => {
             <Container>
                 <Row>
                     {
-                        teams.map(team => <Col xs={12} md={4} className='p-3'> < Teams team={team}> </Teams></Col>)
+                        teams.map(team => <Col xs={12} md={4} className='p-3'> < Teams team={team} key={team.idTeam}> </Teams></Col>)
                     }
                 </Row>
             </Container>

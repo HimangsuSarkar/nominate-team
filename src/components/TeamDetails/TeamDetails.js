@@ -21,7 +21,7 @@ const TeamDetails = (props) => {
         <div className='bg-dark text-white'>
             <Container>
                 {
-                    team.map(about => <TeamAbout about={about}></TeamAbout>)
+                    team.map(about => <TeamAbout about={about} key={about.idTeam}></TeamAbout>)
                 }
             </Container>
         </div >

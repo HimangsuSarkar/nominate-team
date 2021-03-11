@@ -11,6 +11,7 @@ import {
 import Home from './components/Home/Home';
 import Teams from './components/Teams/Teams';
 import TeamDetails from './components/TeamDetails/TeamDetails';
+import NoMatch from './components/NoMatch/NoMatch';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="*">
+          <NoMatch />
         </Route>
       </Switch>
     </Router >
