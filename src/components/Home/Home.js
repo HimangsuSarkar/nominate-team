@@ -16,7 +16,7 @@ const Home = () => {
 
 
     return (
-        <div className="bg-dark">
+        <div className="bg-secondary">
             <Banner></Banner>
             <Container>
                 <Row>

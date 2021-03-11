@@ -6,6 +6,7 @@ import { Col, Image, Jumbotron, Row } from 'react-bootstrap';
 import male from '../../image/male.png';
 import female from '../../image/female.png';
 import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import './TeamAbout.css';
 
 const TeamAbout = (props) => {
     // console.log(props.about);
@@ -14,13 +15,12 @@ const TeamAbout = (props) => {
     const { strTeam, intFormedYear, strSport, strCountry, strGender, strDescriptionEN, strTeamBanner, strFacebook, strTwitter, strYoutube } = props.about;
     return (
         < div >
-            <div>
-                <Jumbotron>
-                    <Image src={strTeamBanner} fluid className=''></Image>
-                </Jumbotron >
-            </div>
 
-            <Row className='bg-primary mt-4 p-3'>
+            <Jumbotron className='banner'>
+                < Image src={strTeamBanner} fluid className=''></Image>
+            </Jumbotron >
+
+            <Row className='bg-success mt-4 p-3 rounded'>
                 <Col xs={12} md={6} >
                     <h1>{strTeam}</h1>
                     <p>< FontAwesomeIcon icon={faCalendarCheck} />  Founded:{intFormedYear}</p>
