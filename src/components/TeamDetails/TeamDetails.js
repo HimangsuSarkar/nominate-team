@@ -14,11 +14,10 @@ const TeamDetails = (props) => {
         fetch(url)
             .then(res => res.json())
             .then(data => setTeam(data.teams))
-
     }, [])
 
     return (
-        <div>
+        <div className='bg-dark'>
             <Container>
                 {
                     team.map(about => <TeamAbout about={about}></TeamAbout>)

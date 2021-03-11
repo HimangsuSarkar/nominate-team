@@ -28,8 +28,10 @@ const TeamAbout = (props) => {
 
                 </Col>
             </Row>
-            <div>
+            <Row>
                 <p>{strDescriptionEN}</p>
+            </Row>
+            <Row>
                 <a href={`https://${strFacebook}`} target="_blank">
                     <img style={{ maxWidth: "70px" }} src={facebook} alt="" />
                 </a>
@@ -39,13 +41,10 @@ const TeamAbout = (props) => {
                 <a href={`https://${strYoutube}`} target="_blank">
                     <img style={{ maxWidth: "70px" }} src={youtube} alt="" />
                 </a>
+            </Row>
 
-
-            </div >
-            < div >
-
-            </div >
         </div >
+
 
     );
 };

@@ -9,21 +9,14 @@ const Teams = (props) => {
     const { strTeam, strSport, strTeamBadge, idTeam } = props.team;
 
     return (
-
-        <Container>
-            <Row >
-                <Col>
-                    <Card style={{ width: '18rem' }} >
-                        <Card.Img variant="top" src={strTeamBadge} />
-                        <Card.Body>
-                            <Card.Title>{strTeam}</Card.Title>
-                            <Card.Text>Sports Type:{strSport}</Card.Text>
-                            <Link to={`/team/${idTeam}`}> <Button variant="primary">Explore < FontAwesomeIcon icon={faArrowRight} /></Button></Link>
-                        </Card.Body>
-                    </Card >
-                </Col >
-            </Row >
-        </Container >
+        < Card style={{ width: '18rem' }} className="p-4  text-center" >
+            < Card.Img variant="top" src={strTeamBadge} />
+            <Card.Body>
+                <Card.Title>{strTeam}</Card.Title>
+                <Card.Text>Sports Type:{strSport}</Card.Text>
+                <Link to={`/team/${idTeam}`}> <Button variant="primary">Explore < FontAwesomeIcon icon={faArrowRight} /></Button></Link>
+            </Card.Body>
+        </Card >
 
     );
 };
