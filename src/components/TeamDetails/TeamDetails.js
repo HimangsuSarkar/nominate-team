@@ -17,7 +17,7 @@ const TeamDetails = (props) => {
     }, [])
 
     return (
-        <div className='bg-dark'>
+        <div className='bg-dark text-white'>
             <Container>
                 {
                     team.map(about => <TeamAbout about={about}></TeamAbout>)
