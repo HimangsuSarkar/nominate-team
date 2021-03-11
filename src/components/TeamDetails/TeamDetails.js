@@ -15,7 +15,7 @@ const TeamDetails = (props) => {
         fetch(url)
             .then(res => res.json())
             .then(data => setTeam(data.teams))
-    }, [])
+    }, [idTeam])
 
     return (
         <div className='bg-dark text-white'>
